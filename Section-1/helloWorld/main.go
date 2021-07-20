@@ -17,5 +17,10 @@ func main() { // this bracket has to open here only else compilation fails
 	fmt.Println("Variable with typedef have deefault values equal to 0 based on type store in them ",
 		variableWithTypeDef)
 
-	fmt.Printf("Type of variable shortOp is  %T ", shortOp)
+	fmt.Printf("Type of variable shortOp is  %T ", shortOp) // using printf ->print with format
+
+	rawString := `I am a raw string.
+						"This is what I can doooo"`
+
+	fmt.Print(rawString)
 }
