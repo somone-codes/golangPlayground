@@ -23,4 +23,9 @@ func main() { // this bracket has to open here only else compilation fails
 						"This is what I can doooo"`
 
 	fmt.Print(rawString)
+
+	type customType int // defined my own type based on int (sorta like extends int)
+	var customTypeVariable customType = 10
+	fmt.Printf("\nType of customTypeVar is %T and value is %v", customTypeVariable, customTypeVariable)
+
 }
