@@ -1,0 +1,5 @@
+1. Run -> go mod init <anyNamespace>/hello
+2. Write the code
+3. Run -> go mod tidy
+4. Run -> go test
+
