@@ -6,3 +6,5 @@
 6. Update golang.org/x/text -> go get golang.org/x/text
 7. Code change
 8. Fetch v3 version of rsc.io/quote -> go get rsc.io/quote/v3
+9. code change to migrate
+10. for clean up run -> go mod tidy
