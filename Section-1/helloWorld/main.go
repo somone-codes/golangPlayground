@@ -28,4 +28,6 @@ func main() { // this bracket has to open here only else compilation fails
 	var customTypeVariable customType = 10
 	fmt.Printf("\nType of customTypeVar is %T and value is %v", customTypeVariable, customTypeVariable)
 
+	var typeConversion int = int(customTypeVariable) // since underlying type of customType is int we can do this
+	fmt.Print("Type conversion ", typeConversion)
 }
