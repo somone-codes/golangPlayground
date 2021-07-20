@@ -2,4 +2,5 @@
 2. Write the code
 3. Run -> go mod tidy
 4. Run -> go test
-
+5. looks for all mods -> go list -m all
+6. Update golang.org/x/text -> go get golang.org/x/text
