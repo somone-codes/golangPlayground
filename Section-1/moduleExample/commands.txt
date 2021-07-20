@@ -4,3 +4,5 @@
 4. Run -> go test
 5. looks for all mods -> go list -m all
 6. Update golang.org/x/text -> go get golang.org/x/text
+7. Code change
+8. Fetch v3 version of rsc.io/quote -> go get rsc.io/quote/v3
