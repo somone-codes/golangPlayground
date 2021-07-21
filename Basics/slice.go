@@ -32,8 +32,14 @@ func main() {
 	//append
 	makeSliceWithCap = append(makeSliceWithCap, "I am a slice element 2!")
 	makeSliceWithCap = append(makeSliceWithCap, "I am a slice element 3!")
+	makeSliceWithCap = append(makeSliceWithCap, "I am a slice element 4!")
 	fmt.Println(" \n", makeSliceWithCap)
 
 	appendSlice := append(makeSliceWithCap, makeSliceWithoutCap...) // spreading
+	fmt.Println(" \n", appendSlice)
+
+	//deleting in slice (no direct support so go via slicing)
+	//deleting 3rd element
+	appendSlice = append(appendSlice[:2], appendSlice[3:]...)
 	fmt.Println(" \n", appendSlice)
 }
