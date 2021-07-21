@@ -4,10 +4,13 @@ import "fmt"
 
 var variable = 22
 
+// x:=11 this is not allow, only allowed in block level
+
+const constant = "I am a const!"
+
 func main() { // this bracket has to open here only else compilation fails
 	var variableWithTypeDef int // non usage of declared variable throws err
 	print("hello")
-
 	//short declaration operator
 	shortOp := "I am short op" // type is inferred and changing value of this var in future must be string only for string
 	fmt.Println(shortOp)
@@ -30,4 +33,6 @@ func main() { // this bracket has to open here only else compilation fails
 
 	var typeConversion int = int(customTypeVariable) // since underlying type of customType is int we can do this
 	fmt.Print("Type conversion ", typeConversion)
+
+	fmt.Print(constant)
 }
