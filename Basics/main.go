@@ -102,6 +102,7 @@ func main() { // this bracket has to open here only else compilation fails
 		i++
 	}
 
+	// if statement
 	if something := 22; something == 22 {
 		fmt.Print("something here is local var, and this if can have assignment + condition")
 	}
