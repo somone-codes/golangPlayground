@@ -29,7 +29,7 @@
      Egs: go mod init moduleExample/hello 
 
 1. **go list -m all**
-    >Prints all the modules dependencies.
+>Prints all the modules dependencies.
 
 1. **go mod tidy**
     >Cleans up unused dependencies.
