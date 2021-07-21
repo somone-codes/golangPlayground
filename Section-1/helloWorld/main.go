@@ -10,8 +10,8 @@ const constant = "I am a const!"
 
 const (
 	const1         = 42
-	const2         = "I am a constant too!"
-	const3 float32 = 23.44
+	const2         = "I am a constant too!" // untyped constant
+	const3 float32 = 23.44                  // typed constant
 )
 
 var (
