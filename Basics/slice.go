@@ -28,4 +28,12 @@ func main() {
 	x := [3]string{"Лайка", "Белка", "Стрелка"}
 	s := x[:] // a slice referencing the storage of x, start and end index in between : is optional
 	fmt.Println(" slice of array s is", s)
+
+	//append
+	makeSliceWithCap = append(makeSliceWithCap, "I am a slice element 2!")
+	makeSliceWithCap = append(makeSliceWithCap, "I am a slice element 3!")
+	fmt.Println(" \n", makeSliceWithCap)
+
+	appendSlice := append(makeSliceWithCap, makeSliceWithoutCap...) // spreading
+	fmt.Println(" \n", appendSlice)
 }
