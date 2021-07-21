@@ -25,4 +25,12 @@ func main() {
 		fmt.Print(i)
 		i++
 	}
+
+	// for loop through collection like slice/array..
+	fmt.Println()
+	array := [...]string{" Pen", "Teller"}
+	for length, value := range array { // value is optional
+		fmt.Println(length, value)
+	}
+
 }
