@@ -10,7 +10,9 @@ type person struct {
 	id    int
 } // we need not use struct we can use any type, even custom type in for methods
 
+//getName is  a method
 //p is receiver
+//whoever is the receiver implies this method is part of that type
 func (p person) getName() string {
 	return fmt.Sprint(p.fname, p.lname)
 }

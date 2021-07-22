@@ -35,5 +35,6 @@ func main() {
 		fmt.Printf("i is %v\n", i)
 	}
 
-	// type switch tbd
+	// type switch
+	//refer interface.go
 }
