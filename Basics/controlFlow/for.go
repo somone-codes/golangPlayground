@@ -39,6 +39,7 @@ func main() {
 		for i := 0; i < 100; i++ {
 			writeChannel <- i
 		}
+		//can close only write and read-write channel i.e read only channels can't be closed!
 		close(writeChannel) // remove this and see what happens?
 	}(ch)
 
