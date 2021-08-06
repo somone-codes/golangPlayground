@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	//create using var
+	// var c chan int64
 	c := make(chan int64) // unbuffered / synchronous channel
 	//writing a go routine to push data to channel since if done here as channel are blocking , it will block this main
 	//go routine , hence pushing it in a func and that go routine will be blocking until the main go routine has completed read
