@@ -33,4 +33,17 @@ func main() {
 		fmt.Println(length, value)
 	}
 
+	//for loop channel
+	ch := make(chan int)
+	go func(writeChannel chan<- int) {
+		for i := 0; i < 100; i++ {
+			writeChannel <- i
+		}
+		close(writeChannel) // remove this and see what happens?
+	}(ch)
+
+	for data := range ch { // keeps reading till channel is closed.
+		fmt.Println(data)
+	}
+
 }
