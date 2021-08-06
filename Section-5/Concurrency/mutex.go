@@ -8,11 +8,14 @@ import (
 
 var count = 0
 var wg sync.WaitGroup
+var mutex sync.Mutex
 
 func incrAndPrint() {
+	mutex.Lock()
 	tempCount := count
 	tempCount += 1
 	count = tempCount
+	mutex.Unlock()
 	fmt.Println("Count value is ", count)
 	fmt.Println("Number of go routines when ending a incrAndPrint ", runtime.NumGoroutine())
 	wg.Done()
