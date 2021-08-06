@@ -10,7 +10,9 @@ var count = 0
 var wg sync.WaitGroup
 
 func incrAndPrint() {
-	count += 1
+	tempCount := count
+	tempCount += 1
+	count = tempCount
 	fmt.Println("Count value is ", count)
 	fmt.Println("Number of go routines when ending a incrAndPrint ", runtime.NumGoroutine())
 	wg.Done()
