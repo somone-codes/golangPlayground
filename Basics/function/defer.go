@@ -9,5 +9,6 @@ func main() {
 
 func plus1(i int) (j int) { // notice the return variable
 	defer func() { j++ }() // exec after the return , incr j and this will be returned
-	return 1               // setting j = 1
+	j = i
+	return j // setting j = 1
 }
